@@ -4,14 +4,14 @@ import './styles.css';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div>
       <Head>
-        <title>Welcome to surface!</title>
+        <title>Pluto.</title>
       </Head>
-      <main className="app">
+      <main className="">
         <Component {...pageProps} />
       </main>
-    </>
+    </div>
   );
 }
 
