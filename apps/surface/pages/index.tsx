@@ -1,4 +1,5 @@
 import * as Unicons from '@iconscout/react-unicons';
+import Link from 'next/link';
 import { ReactNode } from 'react';
 
 export function Index() {
@@ -20,12 +21,14 @@ export function Index() {
         />
       </div>
       <div className="col-span-2 w-full">
-        <Button
-          icon={<Unicons.UilBox />}
-          link="https://github.com/PlutoIO"
-          title="Docs"
-          description="For all you Developers feel free to check out! 📙"
-        />
+        <Link href="/documentation">
+          <Button
+            icon={<Unicons.UilBox />}
+            link=""
+            title="Documentation"
+            description="For all you Developers feel free to check out! 📙"
+          />
+        </Link>
       </div>
       <div className="col-span-2 w-full">
         <Button
